@@ -13,6 +13,7 @@ const dogSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
+    unique: true
   },
 });
 const dogModel = mongoose.model("dog", dogSchema);
